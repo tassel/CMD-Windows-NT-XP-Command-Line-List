@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Commands Overview</title>
+    <style>
+        body {
+            background-color: #1d1e22;
+            color: #ffa500;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #22252a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #ffa500;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #22252a;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .command-category {
+            margin-bottom: 20px;
+        }
+
+        .command-category h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ffa500;
+            padding-bottom: 5px;
+        }
+
+        .commands-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .commands-list li {
+            margin: 8px 0;
+            line-height: 1.6;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid #444;
+        }
+
+        .commands-list .command {
+            flex: 1;
+            font-weight: bold;
+            color: #ffcc70;
+            text-align: left;
+        }
+
+        .commands-list .description {
+            flex: 2;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #22252a;
+            color: #ffa500;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CMD Windows NT/XP Command Line List</h1>
+</header>
+
+<div class="container">
+    <div class="command-category">
+        <h2>Quick Commands (add your own here according to your own wishes)</h2>
+        <ul class="commands-list">
+            <li>
+                <span class="command">dir /d > Tekstfile.txt</span>
+                <span class="description">Print folders to tekstfile</span>
+            </li>
+            <li>
+                <span class="command">dir /b > Tekstfile.txt</span>
+                <span class="description">Print files to textfile</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="command-category">
+        <h2>An A-Z Index of the Windows NT/XP Command Line:</h2>
+        <ul class="commands-list">
+            <li>
+                <span class="command">ADDUSERS</span>
+                <span class="description">Add or list users to/from a CSV file</span>
+            </li>
+            <li>
+                <span class="command">ARP</span>
+                <span class="description">Address Resolution Protocol</span>
+            </li>
+            <li>
+                <span class="command">ASSOC</span>
+                <span class="description">Change file extension associations</span>
+            </li>
+            <li>
+                <span class="command">ASSOCIAT</span>
+                <span class="description">One step file association</span>
+            </li>
+            <li>
+                <span class="command">AT</span>
+                <span class="description">Schedule a command to run at a later time</span>
+            </li>
+            <li>
+                <span class="command">ATTRIB</span>
+                <span class="description">Change file attributes</span>
+            </li>
+            <li>
+                <span class="command">BROWSTAT</span>
+                <span class="description">Get domain, browser, and PDC info</span>
+            </li>
+            <li>
+                <span class="command">CACLS</span>
+                <span class="description">Change file permissions</span>
+            </li>
+            <li>
+                <span class="command">CALL</span>
+                <span class="description">Call one batch program from another</span>
+            </li>
+            <li>
+                <span class="command">CD</span>
+                <span class="description">Change Directory - move to a specific Folder</span>
+            </li>
+            <li>
+                <span class="command">CHANGE</span>
+                <span class="description">Change Terminal Server Session properties</span>
+            </li>
+            <li>
+                <span class="command">CHKDSK</span>
+                <span class="description">Check Disk - check and repair disk problems</span>
+            </li>
+            <li>
+                <span class="command">CHKNTFS</span>
+                <span class="description">Check the NTFS file system</span>
+            </li>
+            <li>
+                <span class="command">CHOICE</span>
+                <span class="description">Accept keyboard input to a batch file</span>
+            </li>
+            <li>
+                <span class="command">CIPHER</span>
+                <span class="description">Encrypt or Decrypt files/folders</span>
+            </li>
+            <li>
+                <span class="command">CleanMgr</span>
+                <span class="description">Automated cleanup of Temp files, recycle bin</span>
+            </li>
+            <li>
+                <span class="command">CLEARMEM</span>
+                <span class="description">Clear memory leaks</span>
+            </li>
+            <li>
+                <span class="command">CLIP</span>
+                <span class="description">Copy STDIN to the Windows clipboard</span>
+            </li>
+            <li>
+                <span class="command">CLS</span>
+                <span class="description">Clear the screen</span>
+            </li>
+            <li>
+                <span class="command">CLUSTER</span>
+                <span class="description">Windows Clustering</span>
+            </li>
+            <li>
+                <span class="command">CMD</span>
+                <span class="description">Start a new CMD shell</span>
+            </li>
+            <li>
+                <span class="command">COLOR</span>
+                <span class="description">Change colors of the CMD window</span>
+            </li>
+            <li>
+                <span class="command">COMP</span>
+                <span class="description">Compare the contents of two files or sets of files</span>
+            </li>
+            <li>
+                <span class="command">COMPACT</span>
+                <span class="description">Compress files or folders on an NTFS partition</span>
+            </li>
+            <li>
+                <span class="command">COMPRESS</span>
+                <span class="description">Compress individual files on an NTFS partition</span>
+            </li>
+            <li>
+                <span class="command">CON2PRT</span>
+                <span class="description">Connect or disconnect a Printer</span>
+            </li>
+            <li>
+                <span class="command">CONVERT</span>
+                <span class="description">Convert a FAT drive to NTFS</span>
+            </li>
+            <li>
+                <span class="command">COPY</span>
+                <span class="description">Copy one or more files to another location</span>
+            </li>
+            <li>
+                <span class="command">CSVDE</span>
+                <span class="description">Import or Export Active Directory data</span>
+            </li>
+            <li>
+                <span class="command">DATE</span>
+                <span class="description">Display or set the date</span>
+            </li>
+            <li>
+                <span class="command">Dcomcnfg</span>
+                <span class="description">DCOM Configuration Utility</span>
+            </li>
+            <li>
+                <span class="command">DEFRAG</span>
+                <span class="description">Defragment hard drive</span>
+            </li>
+            <li>
+                <span class="command">DEL</span>
+                <span class="description">Delete one or more files</span>
+            </li>
+            <li>
+                <span class="command">DELPROF</span>
+                <span class="description">Delete NT user profiles</span>
+            </li>
+            <li>
+                <span class="command">DELTREE</span>
+                <span class="description">Delete a folder and all subfolders</span>
+            </li>
+            <li>
+                <span class="command">DevCon</span>
+                <span class="description">Device Manager Command Line Utility</span>
+            </li>
+            <li>
+                <span class="command">DIR</span>
+                <span class="description">Display a list of files and folders</span>
+            </li>
+            <li>
+                <span class="command">DIRUSE</span>
+                <span class="description">Display disk usage</span>
+            </li>
+            <li>
+                <span class="command">DISKCOMP</span>
+                <span class="description">Compare the contents of two floppy disks</span>
+            </li>
+            <li>
+                <span class="command">DISKCOPY</span>
+                <span class="description">Copy the contents of one floppy disk to another</span>
+            </li>
+            <li>
+                <span class="command">DNSSTAT</span>
+                <span class="description">DNS Statistics</span>
+            </li>
+            <li>
+                <span class="command">DOSKEY</span>
+                <span class="description">Edit command line, recall commands, and create macros</span>
+            </li>
+            <li>
+                <span class="command">DSADD</span>
+                <span class="description">Add user (computer, group..) to active directory</span>
+            </li>
+            <li>
+                <span class="command">DSQUERY</span>
+                <span class="description">List items in active directory</span>
+            </li>
+            <li>
+                <span class="command">DSMOD</span>
+                <span class="description">Modify user (computer, group..) in active directory</span>
+            </li>
+            <li>
+                <span class="command">ECHO</span>
+                <span class="description">Display message on screen</span>
+            </li>
+            <li>
+                <span class="command">ENDLOCAL</span>
+                <span class="description">End localisation of environment changes in a batch file</span>
+            </li>
+            <li>
+                <span class="command">ERASE</span>
+                <span class="description">Delete one or more files</span>
+            </li>
+            <li>
+                <span class="command">EXIT</span>
+                <span class="description">Quit the CMD shell</span>
+            </li>
+            <li>
+                <span class="command">EXPAND</span>
+                <span class="description">Uncompress files</span>
+            </li>
+            <li>
+                <span class="command">EXTRACT</span>
+                <span class="description">Uncompress CAB files</span>
+            </li>
+            <li>
+                <span class="command">FC</span>
+                <span class="description">Compare two files</span>
+            </li>
+            <li>
+                <span class="command">FDISK</span>
+                <span class="description">Disk Format and partition</span>
+            </li>
+            <li>
+                <span class="command">FIND</span>
+                <span class="description">Search for a text string in a file</span>
+            </li>
+            <li>
+                <span class="command">FINDSTR</span>
+                <span class="description">Search for strings in files</span>
+            </li>
+            <li>
+                <span class="command">FOR</span>
+                <span class="description">Conditionally perform a command several times</span>
+            </li>
+            <li>
+                <span class="command">FORFILES</span>
+                <span class="description">Batch process multiple files</span>
+            </li>
+            <li>
+                <span class="command">FORMAT</span>
+                <span class="description">Format a disk</span>
+            </li>
+            <li>
+                <span class="command">FREEDISK</span>
+                <span class="description">Check free disk space (in bytes)</span>
+            </li>
+            <li>
+                <span class="command">FSUTIL</span>
+                <span class="description">File and Volume utilities</span>
+            </li>
+            <li>
+                <span class="command">FTP</span>
+                <span class="description">File Transfer Protocol</span>
+            </li>
+            <li>
+                <span class="command">FTYPE</span>
+                <span class="description">Display or modify file types used in file extension associations</span>
+            </li>
+            <li>
+                <span class="command">GLOBAL</span>
+                <span class="description">Display membership of global groups</span>
+            </li>
+            <li>
+                <span class="command">GOTO</span>
+                <span class="description">Direct a batch program to jump to a labelled line</span>
+            </li>
+            <li>
+                <span class="command">HELP</span>
+                <span class="description">Online Help</span>
+            </li>
+            <li>
+                <span class="command">HFNETCHK</span>
+                <span class="description">Network Security Hotfix Checker</span>
+            </li>
+            <li>
+                <span class="command">IF</span>
+                <span class="description">Conditionally perform a command</span>
+            </li>
+            <li>
+                <span class="command">IFMEMBER</span>
+                <span class="description">Is the current user in an NT Workgroup</span>
+            </li>
+            <li>
+                <span class="command">INSTSRV</span>
+                <span class="description">Install an NT Service</span>
+            </li>
+            <li>
+                <span class="command">IPCONFIG</span>
+                <span class="description">Configure IP</span>
+            </li>
+            <li>
+                <span class="command">KILL</span>
+                <span class="description">Remove a program from memory</span>
+            </li>
+            <li>
+                <span class="command">LABEL</span>
+                <span class="description">Edit a disk label</span>
+            </li>
+            <li>
+                <span class="command">LOCAL</span>
+                <span class="description">Display membership of local groups</span>
+            </li>
+            <li>
+                <span class="command">LOGEVENT</span>
+                <span class="description">Write text to the NT event viewer</span>
+            </li>
+            <li>
+                <span class="command">LOGOFF</span>
+                <span class="description">Log a user off</span>
+            </li>
+            <li>
+                <span class="command">LOGTIME</span>
+                <span class="description">Log the date and time in a file</span>
+            </li>
+            <li>
+                <span class="command">MAPISEND</span>
+                <span class="description">Send email from the command line</span>
+            </li>
+            <li>
+                <span class="command">MEM</span>
+                <span class="description">Display memory usage</span>
+            </li>
+            <li>
+                <span class="command">MD</span>
+                <span class="description">Create new folders</span>
+            </li>
+            <li>
+                <span class="command">MODE</span>
+                <span class="description">Configure a system device</span>
+            </li>
+            <li>
+                <span class="command">MORE</span>
+                <span class="description">Display output, one screen at a time</span>
+            </li>
+            <li>
+                <span class="command">MOUNTVOL</span>
+                <span class="description">Manage a volume mount point</span>
+            </li>
+            <li>
+            <li>
+                <span class="command">MOVE</span>
+                <span class="description">Move files from one folder to another</span>
+            </li>
+            <li>
+                <span class="command">MOVEUSER</span>
+                <span class="description">Move a user from one domain to another</span>
+            </li>
+            <li>
+                <span class="command">MSG</span>
+                <span class="description">Send a message</span>
+            </li>
+            <li>
+                <span class="command">MSIEXEC</span>
+                <span class="description">Microsoft Windows Installer</span>
+            </li>
+            <li>
+                <span class="command">MSINFO</span>
+                <span class="description">Windows NT diagnostics</span>
+            </li>
+            <li>
+                <span class="command">MUNGE</span>
+                <span class="description">Find and Replace text within file(s)</span>
+            </li>
+            <li>
+                <span class="command">MV</span>
+                <span class="description">Copy in-use files</span>
+            </li>
+            <li>
+                <span class="command">NET</span>
+                <span class="description">Manage network resources</span>
+            </li>
+            <li>
+                <span class="command">NETDOM</span>
+                <span class="description">Domain Manager</span>
+            </li>
+            <li>
+                <span class="command">NETSH</span>
+                <span class="description">Configure network protocols</span>
+            </li>
+            <li>
+                <span class="command">NETSVC</span>
+                <span class="description">Command-line Service Controller</span>
+            </li>
+            <li>
+                <span class="command">NBTSTAT</span>
+                <span class="description">Display networking statistics (NetBIOS over TCP/IP)</span>
+            </li>
+            <li>
+                <span class="command">NETSTAT</span>
+                <span class="description">Display networking statistics (TCP/IP)</span>
+            </li>
+            <li>
+                <span class="command">NOW</span>
+                <span class="description">Display the current Date and Time</span>
+            </li>
+            <li>
+                <span class="command">NSLOOKUP</span>
+                <span class="description">Name server lookup</span>
+            </li>
+            <li>
+                <span class="command">NTBACKUP</span>
+                <span class="description">Backup folders to tape</span>
+            </li>
+            <li>
+                <span class="command">NTRIGHTS</span>
+                <span class="description">Edit NT user account rights</span>
+            </li>
+            <li>
+                <span class="command">PATH</span>
+                <span class="description">Display or set a search path for executable files</span>
+            </li>
+            <li>
+                <span class="command">PATHPING</span>
+                <span class="description">IP trace utility</span>
+            </li>
+            <li>
+                <span class="command">PAUSE</span>
+                <span class="description">Suspend processing of a batch file and display a message</span>
+            </li>
+            <li>
+                <span class="command">PERMS</span>
+                <span class="description">Show permissions for a user</span>
+            </li>
+            <li>
+                <span class="command">PERFMON</span>
+                <span class="description">Performance Monitor</span>
+            </li>
+            <li>
+                <span class="command">PING</span>
+                <span class="description">Test a network connection</span>
+            </li>
+            <li>
+                <span class="command">POPD</span>
+                <span class="description">Restore the previous value of the current directory saved by PUSHD</span>
+            </li>
+            <li>
+                <span class="command">PORTQRY</span>
+                <span class="description">Display the status of ports and services</span>
+            </li>
+            <li>
+                <span class="command">PRINT</span>
+                <span class="description">Print a text file</span>
+            </li>
+            <li>
+                <span class="command">PRNCNFG</span>
+                <span class="description">Display, configure, or rename a printer</span>
+            </li>
+            <li>
+                <span class="command">PRNMNGR</span>
+                <span class="description">Add, delete, list printers, set the default printer</span>
+            </li>
+            <li>
+                <span class="command">PROMPT</span>
+                <span class="description">Change the command prompt</span>
+            </li>
+            <li>
+                <span class="command">PUSHD</span>
+                <span class="description">Save and then change the current directory</span>
+            </li>
+            <li>
+                <span class="command">QGREP</span>
+                <span class="description">Search file(s) for lines that match a given pattern</span>
+            </li>
+            <li>
+                <span class="command">RASDIAL</span>
+                <span class="description">Manage RAS connections</span>
+            </li>
+            <li>
+                <span class="command">RASPHONE</span>
+                <span class="description">Manage RAS connections</span>
+            </li>
+            <li>
+                <span class="command">RECOVER</span>
+                <span class="description">Recover a damaged file from a defective disk</span>
+            </li>
+            <li>
+                <span class="command">REG</span>
+                <span class="description">Read, Set or Delete registry keys and values</span>
+            </li>
+            <li>
+                <span class="command">REGEDIT</span>
+                <span class="description">Import or export registry settings</span>
+            </li>
+            <li>
+                <span class="command">REGSVR32</span>
+                <span class="description">Register or unregister a DLL</span>
+            </li>
+            <li>
+                <span class="command">REGINI</span>
+                <span class="description">Change Registry Permissions</span>
+            </li>
+            <li>
+                <span class="command">REM</span>
+                <span class="description">Record comments (remarks) in a batch file</span>
+            </li>
+            <li>
+                <span class="command">REN</span>
+                <span class="description">Rename a file or files</span>
+            </li>
+            <li>
+                <span class="command">REPLACE</span>
+                <span class="description">Replace or update one file with another</span>
+            </li>
+            <li>
+                <span class="command">RD</span>
+                <span class="description">Delete folder(s)</span>
+            </li>
+            <li>
+                <span class="command">RDISK</span>
+                <span class="description">Create a Recovery Disk</span>
+            </li>
+            <li>
+                <span class="command">RMTSHARE</span>
+                <span class="description">Share a folder or a printer</span>
+            </li>
+            <li>
+                <span class="command">ROBOCOPY</span>
+                <span class="description">Robust File and Folder Copy</span>
+            </li>
+            <li>
+                <span class="command">ROUTE</span>
+                <span class="description">Manipulate network routing tables</span>
+            </li>
+            <li>
+                <span class="command">RUNAS</span>
+                <span class="description">Execute a program under a different user account</span>
+            </li>
+            <li>
+                <span class="command">RUNDLL32</span>
+                <span class="description">Run a DLL command (add/remove print connections)</span>
+            </li>
+            <li>
+                <span class="command">SC</span>
+                <span class="description">Service Control</span>
+            </li>
+            <li>
+                <span class="command">SCLIST</span>
+                <span class="description">Display NT Services</span>
+            </li>
+            <li>
+                <span class="command">ScriptIt</span>
+                <span class="description">Control GUI applications</span>
+            </li>
+            <li>
+                <span class="command">SET</span>
+                <span class="description">Display, set, or remove Windows NT environment variables</span>
+            </li>
+            <li>
+                <span class="command">SETLOCAL</span>
+                <span class="description">Begin localisation of environment changes in a batch file</span>
+            </li>
+            <li>
+                <span class="command">SETX</span>
+                <span class="description">Set environment variables permanently</span>
+            </li>
+            <li>
+                <span class="command">SHARE</span>
+                <span class="description">List or edit a file share or print share</span>
+            </li>
+            <li>
+                <span class="command">SHIFT</span>
+                <span class="description">Shift the position of replaceable parameters in a batch file</span>
+            </li>
+            <li>
+                <span class="command">SHORTCUT</span>
+                <span class="description">Create a windows shortcut (.LNK file)</span>
+            </li>
+            <li>
+                <span class="command">SHOWGRPS</span>
+                <span class="description">List the NT Workgroups a user is in</span>
+            </li>
+            <li>
+                <span class="command">SHOWMBRS</span>
+                <span class="description">List the members of an NT Workgroup</span>
+            </li>
+            <li>
+                <span class="command">SHUTDOWN</span>
+                <span class="description">Shutdown the computer</span>
+            </li>
+            <li>
+                <span class="command">SHUTGUI</span>
+                <span class="description">Shutdown the computer</span>
+            </li>
+            <li>
+                <span class="command">SLEEP</span>
+                <span class="description">Wait for x seconds</span>
+            </li>
+            <li>
+                <span class="command">SOON</span>
+                <span class="description">Schedule a command to run in the near future</span>
+            </li>
+            <li>
+                <span class="command">SORT</span>
+                <span class="description">Sort input</span>
+            </li>
+            <li>
+                <span class="command">START</span>
+                <span class="description">Start a separate window to run a specified program or command</span>
+            </li>
+            <li>
+                <span class="command">SU</span>
+                <span class="description">Switch User</span>
+            </li>
+            <li>
+                <span class="command">SUBINACL</span>
+                <span class="description">Edit file and folder Permissions, Ownership and Domain</span>
+            </li>
+            <li>
+                <span class="command">SUBST</span>
+                <span class="description">Associate a path with a drive letter</span>
+            </li>
+            <li>
+                <span class="command">TASKLIST</span>
+                <span class="description">List running applications and services</span>
+            </li>
+            <li>
+                <span class="command">TIME</span>
+                <span class="description">Display or set the system time</span>
+            </li>
+            <li>
+                <span class="command">TIMEOUT</span>
+                <span class="description">Delay processing of a batch file</span>
+            </li>
+            <li>
+                <span class="command">TITLE</span>
+                <span class="description">Set the window title for a CMD.EXE session</span>
+            </li>
+            <li>
+                <span class="command">TOUCH</span>
+                <span class="description">Change file timestamps</span>
+            </li>
+            <li>
+                <span class="command">TRACERT</span>
+                <span class="description">Trace route to a remote host</span>
+            </li>
+            <li>
+                <span class="command">TREE</span>
+                <span class="description">Graphical display of folder structure</span>
+            </li>
+            <li>
+                <span class="command">TYPE</span>
+                <span class="description">Display the contents of a text file</span>
+            </li>
+            <li>
+                <span class="command">USRSTAT</span>
+                <span class="description">List domain usernames and last login</span>
+            </li>
+            <li>
+                <span class="command">VER</span>
+                <span class="description">Display version information</span>
+            </li>
+            <li>
+                <span class="command">VERIFY</span>
+                <span class="description">Verify that files have been saved</span>
+            </li>
+            <li>
+                <span class="command">VOL</span>
+                <span class="description">Display a disk label</span>
+            </li>
+            <li>
+                <span class="command">WHERE</span>
+                <span class="description">Locate and display files in a directory tree</span>
+            </li>
+            <li>
+                <span class="command">WHOAMI</span>
+                <span class="description">Output the current UserName and domain</span>
+            </li>
+            <li>
+                <span class="command">WINMSD</span>
+                 <span class="description">Windows NT Diagnostics</span>
+            </li>
+            <li>
+                <span class="command">WINMSDP</span>
+                <span class="description">Windows NT Diagnostics II</span>
+            </li>
+            <li>
+                <span class="command">WMIC</span>
+                <span class="description">WMI Command</span>
+            </li>
+            <li>
+                <span class="command">XCACLS</span>
+                <span class="description">Change file permissions</span>
+            </li>
+            <li>
+                <span class="command">XCOPY</span>
+                <span class="description">Copy files and folders</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 CMD Overview. All rights reserved.
+</footer>
+
+</body>
+</html>
+
